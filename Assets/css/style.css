@@ -31,10 +31,10 @@ body {
 }
 
 h1 {
-  color: red;
+  color: white;
   font-family: "Rajdhani";
   font-size: 36px;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 button {
@@ -43,20 +43,12 @@ button {
   font-weight: 400;
 }
 
-.containe {
-  width: 80%;
-  height: 75%;
-  margin: 0 auto;
-  box-sizing: border-box;
-  border: 2px solid #c4c4c44a;
-}
-
 /* style du header avec tous les blocs a l'interieur */
 
 header {
   width: 80%;
   margin: 0 auto;
-  height: 100px;
+  height: 120;
   padding: 30px;
   padding-bottom: 20px;
   border: 2px solid #c4c4c44a;
@@ -92,6 +84,18 @@ header nav ul li a:hover {
   color: #ffff00;
 }
 
+/* style de section par defaut */
+
+.section {
+  width: 80%;
+  height: 75%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 2px solid #c4c4c44a;
+  border-bottom: none;
+  border-top: none;
+}
+
 /*  style de la premiere section hero avec tout les blocs a l' interieur */
 
 #hero {
@@ -106,7 +110,7 @@ header nav ul li a:hover {
 
 .text-modif {
   width: 80%;
-  height: 90%;
+  height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
   border: 2px solid #c4c4c44a;
@@ -155,3 +159,37 @@ header nav ul li a:hover {
   justify-content: center;
   text-align: center;
 }
+
+/* style de la deuxieme section avec les blocs a l'interieu */
+.section .cinema {
+  display: block;
+}
+.section .cinema .text-cine {
+  margin-left: 50px;
+  color: #f8f184;
+  margin-bottom: 20px;
+}
+
+.section .cinema .texte {
+  width: 85%;
+  height: 20%;
+  /* background-color: #f8f184; */
+  color: var(--blanc-color);
+  font-size: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.section .cinema .image-cine {
+  justify-content: space-between;
+  display: flex;
+  margin: 60px auto;
+  padding: 30px;
+}
+.section .cinema .image-cin .img {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  vertical-align: middle;
+}
+.section .cinema .image-cin .i;
