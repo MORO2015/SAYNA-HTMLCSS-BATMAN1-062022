@@ -141,10 +141,13 @@ header nav ul li a:hover {
   align-items: center;
 }
 #hero div .bouton .modif-bouton {
-  background-color: antiquewhite;
+  background-image: linear-gradient(
+    to right,
+    var(--blanc-color),
+    var(--red-fort-color)
+  );
   height: 70px;
-  width: 300px;
-  background: #eddebf;
+  width: 300x;
   /* opacity: 50%; */
   margin-left: 50px;
   margin-right: 50px;
