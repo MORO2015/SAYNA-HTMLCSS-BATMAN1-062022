@@ -1,1 +1,470 @@
+
 /*# sourceMappingURL=style.css.map */
+
+/* Defintion de la police du Rajdhani et Space-grotesk */
+
+@import url("https://fonts.googleapis.com/css2? family= Oleo+Script &famille= Rajdhani:wght@300;400;500;600 &famille= Espace+Grotesk:wght@300;400;500;600;700 & display=swap");
+
+/* creation des variable des couleurs */
+:root {
+  --yellow-color: #ffff00;
+  --yellow-color: #f8f184;
+  --blue-color: #19587d;
+  --red-bordo-color: #b11313;
+  --black-defonce-color: #0d0e09;
+  --blanc-faible-color: #eddebf;
+  --red-fort-color: #890008;
+  --gris-color: #c4c4c4;
+  --black-color: #000000;
+  --blanc-color: #ffffff;
+}
+
+/*  Definiton des elements par défaut dans le corps du site */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Space-Grotesk";
+  font-weight: 300;
+}
+
+h1 {
+  color: white;
+  font-family: "Rajdhani";
+  font-size: 36px;
+  font-weight: bold;
+}
+
+button {
+  font-size: 20;
+  font-family: "Rajdhani";
+  font-weight: 400;
+}
+
+/* style du header avec tous les blocs a l'interieur */
+
+header {
+  width: 80%;
+  margin: 0 auto;
+  height: 120;
+  padding: 30px;
+  padding-bottom: 20px;
+  border: 2px solid #c4c4c44a;
+}
+header nav {
+  padding: 10px 10px;
+  display: inline;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.975);
+}
+header nav a img {
+  height: 60px;
+  filter: opacity(25%);
+}
+
+header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right;
+}
+header nav ul li {
+  list-style: none;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #ffff00;
+}
+
+/* style de section par defaut */
+
+.section {
+  width: 80%;
+  /* height: 75%; */
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 2px solid #c4c4c44a;
+  border-bottom: none;
+  border-top: none;
+}
+.image-aligne {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 9%;
+  top: 50%;
+}
+.fleche {
+}
+.image-aligne img {
+  padding: 10px;
+}
+/*  style de la premiere section hero avec tout les blocs a l' interieur */
+
+#hero {
+  background-image: url(../Illustrations/Bathome1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 850px;
+  background-attachment: none;
+}
+
+.text-modif {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 2px solid #c4c4c44a;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carde-text {
+  width: 60%;
+  padding: 40px;
+  justify-content: center;
+}
+.text {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.text-blod {
+  text-align: center;
+}
+
+#hero div .bouton {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+#hero div .bouton .modif-bouton {
+  background-image: linear-gradient(
+    to right,
+    var(--blanc-color),
+    var(--red-fort-color)
+  );
+  height: 70px;
+  width: 300x;
+  /* opacity: 50%; */
+  margin-left: 50px;
+  margin-right: 50px;
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  vertical-align: center;
+  color: #ffffff;
+  justify-content: center;
+}
+
+#hero div .bouton .modif-bouton :hover {
+  cursor: pointer;
+}
+
+#hero div .bouton .modif-bouton a {
+  margin: auto;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  opacity: 100%;
+  font-size: 20px;
+}
+
+/* style de la deuxieme section avec les blocs a l'interieu */
+.section .cinema {
+  /* display: block; */
+  width: auto;
+  margin: 0 auto;
+  align-items: center;
+  /* display: inline-block; */
+  /* text-align: center; */
+}
+.section .cinema .text-cole {
+  display: flex;
+  align-items: center;
+}
+.section .cinema .text-cole img {
+  width: 150px;
+}
+.text-cine {
+  margin-top: 30px;
+}
+
+.section .cinema .text-cine {
+  margin-left: 50px;
+  color: #f8f184;
+  margin-bottom: 20px;
+}
+
+.section .cinema .texte {
+  width: 85%;
+  height: 20%;
+  /* background-color: #f8f184; */
+  color: var(--blanc-color);
+  font-size: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.section .cinema .image-cine {
+  justify-content: space-between;
+  display: flex;
+  margin: 60px auto;
+  padding: 30px;
+}
+.section .cinema .image-cin .img {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  vertical-align: middle;
+}
+/* style de l'image des super grand hero */
+.image-grand-super-hero {
+  width: 100%;
+}
+.image-grand-super-hero img {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* style du multimediat */
+.section .cinema .image-texte-bouton {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.section .cinema .image-texte-bouton .image-texte {
+  display: flex;
+  width: 50%;
+  margin: 20px auto;
+}
+.image-mene {
+  position: absolute;
+  right: 0px;
+  top: 2500px;
+}
+
+.section .cinema .image-texte-bouton .image-texte .text-description {
+  background-image: linear-gradient(to right, #c4c4c4, rgb(28, 28, 80));
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-color: #c4c4c4;
+  height: auto;
+  padding: 20px;
+  display: inline-block;
+}
+.section .cinema .image-texte-bouton .image-texte .text-description h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+  /* font-size: 15px; */
+  color: var(--blanc-faible-color);
+  margin-bottom: 10px;
+}
+
+.section .cinema .image-texte-bouton .image-texte .text-description .police {
+  margin-bottom: 10px;
+  color: var(--blanc-color);
+}
+
+.section .cinema .image-texte-bouton .image-texte .text-description h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.section .cinema .image-texte-bouton .image-texte .text-description h3 span {
+  color: var(--yellow-color);
+  font-weight: bold;
+}
+
+.section .cinema .image-texte-bouton .image-texte .text-description h6 {
+  font-size: 12px;
+  color: var(--blanc-color);
+  text-align: justify;
+}
+.section .cinema .image-annonce {
+  margin-top: 50px;
+}
+.img {
+  text-align: center;
+}
+
+/*  le css du style cinema a un probleme responsive en mode telephone*/
+
+/* style de la section formulaire */
+.formulaire {
+  width: 100%;
+  /* background-color: #19587d; */
+  background-image: linear-gradient(
+    to bottom right,
+    var(--gris-color),
+    var(--blue-color)
+  );
+  display: block;
+  margin-top: 60px;
+}
+.formulaire .carde-formulaire {
+  width: 60%;
+  /* background-color: yellow; */
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 60px;
+}
+.formulaire .carde-formulaire h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.formulaire .carde-formulaire form {
+  width: 80%;
+  margin: 0 auto;
+  /* background-color: #890008; */
+}
+.formulaire .carde-formulaire form label {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--blanc-color);
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 3px solid var(--blanc-color);
+  background: transparent;
+  font-size: 20px;
+  color: var(--blanc-color);
+}
+input[type="email"],
+select,
+textarea:focus {
+  outline: none;
+}
+.formulaire .carde-formulaire form p {
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 20px;
+  color: var(--blanc-faible-color);
+}
+.bouton-forme {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: ; */
+}
+.bouton-forme button {
+  padding: 7px 10px;
+}
+.bouton-forme button a {
+  text-decoration: none;
+  font-size: 15px;
+}
+textarea {
+  width: 100%;
+  height: 30px;
+  resize: none;
+  box-sizing: border-box;
+  color: var(--blanc-faible-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 3px solid var(--blanc-color);
+  font-size: 20px;
+}
+.formulaire .carde-formulaire .confirme {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding-top: 20p;
+  padding-bottom: 40px;
+}
+
+.formulaire .carde-formulaire .confirme input[type="submit"] {
+  padding: 60px 10x;
+  background-image: linear-gradient(to right, #c4c4c4, red);
+  height: 70px;
+  width: 300px;
+  color: var(--blanc-color);
+  font-size: 20px;
+  border: none;
+}
+/* style de la citation de l'hero avant le footer */
+.section .loli {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.section .loli .text-uniq {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.section .loli .text-uniq .regle {
+  font-size: 20px;
+  color: var(--blanc-color);
+  margin-bottom: 50px;
+  text-align: center;
+  /* font-family: "Courier New", Courier, monospace; */
+}
+.section .loli .text-uniq .petite-text {
+  text-align: center;
+}
+.section .loli .image-left {
+  align-self: flex-start;
+  margin-left: 100px;
+}
+.section .loli .image-right {
+  align-self: flex-end;
+  margin-right: 100px;
+}
+
+/* style du pied du site (footer) et tous les element y compris */
+.section .pied {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-top: 100px;
+}
+.section .pied .logo-text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.section .pied .logo-aligne {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 50px;
+}
+>>>>>>> 48f70dde0d67898d1305dbc5dde7a13fde88b65c
